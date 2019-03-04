@@ -12,14 +12,12 @@ IncludeCmd: yes
     exec /bin/bash "$@"
 
 %post
-    echo "Update and upgrade"
     apt-get update
-    #apt-get update && apt-get install -y --no-install-recommends apt-utils
     echo "Install Gimp"
     apt-get install -y gimp
 
     if [ ! -d /images ]; then mkdir /images; fi
-    if [ ! -d /projects ]; then mkdir /containers; fi
+    if [ ! -d /projects ]; then mkdir /projects; fi
     if [ ! -d /containers ]; then mkdir /containers; fi
     if [ ! -d /share ]; then mkdir /share; fi
     if [ ! -d /scratch ]; then mkdir /scratch; fi
