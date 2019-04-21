@@ -6,6 +6,9 @@
 Singularity recipe for [Gimp](https://www.gimp.org).
 
 ## Disclaimer
+
+[![Wold you buy me some coffee?](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/icaoberg)
+
 I am nothing but a humble programmer creating the container for this wonderful app. 
 
 ---
