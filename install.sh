@@ -13,6 +13,9 @@ fi
 
 if [ ! -f $DIRECTORY/$(echo $IMAGE | cut -d"-" -f2).simg ]; then
 	singularity pull --name $(echo $IMAGE | cut -d"-" -f2).simg shub://icaoberg/$IMAGE
+	if [ ! -f $(echo $IMAGE | cut -d"-" -f2).simg ]; then
+		exit
+	fi
 	mv -v $(echo $IMAGE | cut -d"-" -f2).simg $DIRECTORY
 fi
 
