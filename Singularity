@@ -21,6 +21,7 @@ IncludeCmd: yes
     if [ ! -d /containers ]; then mkdir /containers; fi
     if [ ! -d /share ]; then mkdir /share; fi
     if [ ! -d /scratch ]; then mkdir /scratch; fi
+    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
 
 ####################################################################################
 %appenv gimp
