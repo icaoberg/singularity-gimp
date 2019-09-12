@@ -4,6 +4,7 @@ From: ubuntu:16.04
 IncludeCmd: yes
 
 %labels
+    AUTHOR icaoberg
     MAINTAINER icaoberg@cmu.edu
     WEBSITE http://www.cbd.cmu.edu/icaoberg
     VERSION 1.0
@@ -13,7 +14,6 @@ IncludeCmd: yes
 
 %post
     apt-get update
-    echo "Install Gimp"
     apt-get install -y gimp
 
     if [ ! -d /images ]; then mkdir /images; fi
