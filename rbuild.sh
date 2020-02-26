@@ -7,4 +7,4 @@ if [ -f $IMAGE ]; then
 	rm -fv $IMAGE
 fi
 
-sudo singularity build $IMAGE $DEFINITION
+singularity build --remote $IMAGE $DEFINITION
