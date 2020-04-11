@@ -1,32 +1,20 @@
 Bootstrap: docker
-From: ubuntu:16.04
+From: debian:buster
 
 IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
     MAINTAINER icaoberg@cmu.edu
-    WEBSITE http://www.cbd.cmu.edu/icaoberg
-    VERSION 1.0
-
-%runscript
-    exec /bin/bash "$@"
+    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+    VERSION 2.10.8
 
 %post
     apt-get update
-    apt-get install -y gimp
-
-    if [ ! -d /images ]; then mkdir /images; fi
-    if [ ! -d /projects ]; then mkdir /projects; fi
-    if [ ! -d /containers ]; then mkdir /containers; fi
-    if [ ! -d /share ]; then mkdir /share; fi
-    if [ ! -d /scratch ]; then mkdir /scratch; fi
-    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
 
 ####################################################################################
-%appenv gimp
-    APP=/usr/bin/gimp
-    export APP
+%appinstall gimp
+    apt-get install -y gimp     
 
 %apphelp gimp
     For more information about goto visit https://www.gimp.org/
