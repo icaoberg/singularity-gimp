@@ -5,7 +5,7 @@ From: debian:buster
     AUTHOR icaoberg
     MAINTAINER icaoberg@psc.edu
     WEBSITE http://github.com/icaoberg/singularity-gimp
-    COPYRIGHT Copyright © 2021, Pittsburgh Supercomputing Center. All Rights Reserved.
+    COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.
     VERSION 2.10.8
 
 %post
