@@ -1,7 +1,5 @@
 # singularity-gimp
 
-![Gimp](https://www.gimp.org/images/frontpage/wilber-big.png)
-
 Singularity recipe for [Gimp](https://www.gimp.org).
 
 ## Building the image using the recipe
